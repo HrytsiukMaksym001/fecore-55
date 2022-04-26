@@ -1,128 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module 01</title>
-
-    <style>
-      .list {
-        display: flex;
-      }
-      .picture-1 {
-        border: 2px solid tomato;
-      }
-      .picture-2 {
-        border: 2px dashed hotpink;
-      }
-    </style>
   </head>
   <body>
-    <!-- Шапка сайту -->
-    <header>
-      <!-- Головна навігація сторінки -->
-      <nav>
-        <ul>
-          <li>
-            <a href="">Link 1</a>
-          </li>
-          <li>
-            <a href="">Link 2</a>
-          </li>
-          <li>
-            <a href="">Link 3</a>
-          </li>
+    <header class="header">
+      <a href="./index.html" aria-label="логотип сайта barbershop"></a>
+      <img
+        src="./images/header/Logo.png"
+        alt="логотип"
+        width="69"
+        height="56"
+      />
+      <nav class="navigation">
+        <ul class="list">
+          <li class="item"><a href="" class="link"></a>О нас</li>
+          <li class="item"><a href="" class="link"></a>Услуги и цены</li>
+          <li class="item"><a href="" class="link"></a>Мастера</li>
+          <li class="item"><a href="" class="link"></a>Контакты</li>
         </ul>
       </nav>
+      <div class="header-group">
+        <a href="tel:+380441111111">+38 044 111 11 11</a>
+        <button type="button">онлайн-запись</button>
+      </div>
     </header>
 
-    <!-- Основний унікальний розділ -->
-    <main>
-      <!-- Основний будівельний блок для розділів сторінки -->
-      <section>
-        <!-- Групування медіа-контенту за допомогою div -->
-        <div>
-          <ul class="list">
-            <li>
-              <!-- відносний шлях до файлу зображення -->
-              <img
-                class="picture-1"
-                src="./images/section-1/img-1.jpg"
-                alt="Послуга гоління бороди"
-                width="270"
-              />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    <section class="hero">
+      <ul class="list">
+        <li class="item">
+          <a
+            class=""
+            href="http://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a
+          >Instagram
+        </li>
+        <li class="item">
+          <a
+            class=""
+            href="http://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a
+          >Youtube
+        </li>
+      </ul>
+      <div class="hero-group">
+        <p class="upprttitle" lang="en">A hair salon for men in Kyiv</p>
+        <h1 class="hero" lang="en">BarberShop</h1>
+        <p class="subtitle" lang="en">
+          We are experts in trendy men's haircuts. We work quickly, carefully,
+          and tastefully.
+        </p>
+      </div>
+      <ul class="list">
+        <li class="item">
+          <button class="slider-btn" type="button">Назад</button>
+        </li>
+        <li class="item">
+          <button class="slider-btn" type="button">Вперед</button>
+        </li>
+      </ul>
+    </section>
+    <section class="about">
+      <ul class="list">
+        <li class="item">
+          <img
+            src="./images/section-1/img-1.jpg"
+            alt="голінян бороди"
+            width="270"
+            height="445"
+          />
+        </li>
+        <li class="item">
+          <img
+            src="./images/section-1/img-2.jpg"
+            alt="гоління опаской"
+            width="270"
+            height="445"
+          />
+        </li>
+      </ul>
+      <div class="aboutgroup">
+        <p class="uppertitle">О НАС</p>
+        <h2 class="section-title">Лучший Барбершоп твоего города</h2>
+        <p class="subtitle">
+          Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
+          нам.
+        </p>
+        <p class="describtion">
+          Мы команда, которая никогда не останавливается на достигнутом и жаждет
+          перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
+          сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
+          волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
+          приходит!
+        </p>
+        <button class="btn" type="button">онлайн-запись</button>
+      </div>
+    </section>
+    <section class="price">
+      <p class="uppertitile">Проведи время в компании лучших мастеров</p>
+      <h2 class="section-title">Услуги и цены</h2>
+      <ul class="list">
+        <li class="item">
+          <ul class="innerlist">
+            <li class="inner-item">Мужская стрижка от 300 грн.</li>
+            <li class="inner-item">Стрижка бороды от 200 грн.</li>
+            <li class="inner-item">Стрижка усов от 200 грн.</li>
+            <li class="inner-item">Бритье опасной бритвой от 200 грн.</li>
+          </ul>
+        </li>
+        <li class="item">
+          <ul class="innerlist">
+            <li class="inner-item">Cтрижка у стажера от 50 грн.</li>
+            <li class="inner-item">Стрижка под насадку от 200 грн.</li>
+            <li class="inner-item">Детская стрижка (до 12 лет) от 300 грн.</li>
+            <li class="inner-item">Камуфлирование седины от 200 грн.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <button class="btn" type="button">онлайн-запись</button>
+    </section>
+    <section class="benefits">
+      <ul class="list">
+        <li class="item">
+          <p class="benefits-amount">600 <sup>+</sup></p>
+          <p class="benefits-text">Довольных клиентов в день</p>
+        </li>
+        <li class="item">
+          <p class="benefits-amount">200 <sup>+</sup></p>
+          <p class="benefits-text">Лучших мастеров Киева</p>
+        </li>
+        <li class="item">
+          <p class="benefits-amount">50 <sup>+</sup></p>
+          <p class="benefits-text">Наград за отличный сервис</p>
+        </li>
+        <li class="item">
+          <p class="benefits-amount">100 <sup>+</sup></p>
+          <p class="benefits-text">Подарков постоянным клиентам</p>
+        </li>
+      </ul>
+      <div class="benefits-group">
+        <p class="upper-title">старая традиционная школа</p>
+        <h2 class="section-title">Почему приходят именно к нам?</h2>
+        <p class="subtitle">
+          О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
+          чем 10 раз прочитать.
+        </p>
+      </div>
+    </section>
+    <section class="gallery">
+      <p class="upper-title">На латинском языке “барба” означает “борода”</p>
+      <h2 class="section-title" hidden>галерея работ</h2>
+      <ul class="list">
+        <li class="item">
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery-img-1.jpg"
+            alt=""
+            width="270"
+            height="360"
+          />
+        </li>
+        <li class="item">
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery-img-2.jpg"
+            alt=""
+            width="270"
+            height="360"
+          />
+        </li>
+        <li class="item">
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery-img-3.jpg"
+            alt=""
+            width="270"
+            height="360"
+          />
+        </li>
+        <li class="item">
+          <img
+            class="gallery-img"
+            src="./images/gallery/gallery-img-4.jpg"
+            alt=""
+            width="270"
+            height="360"
+          />
+        </li>
+      </ul>
+    </section>
+    <section class="team">
+      <p class="uppertitle"></p>
+      <h2 class="section-title"></h2>
+      <ul class="list">
+        <li class="member-item">
+          <img
+            class="member-img"
+            src="./images/team/img1.jpg"
+            alt="John Smith"
+            width="370"
+            height="346"
+          />
+        </li>
+        <div class="member-group">
+          <h3 class="member-title" lang="en">John Smith</h3>
+          <p class="member-position" lang="en">Extreme Barber</p>
+          <ul class="socials">
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >instagram</a
+              >
             </li>
-            <li>
-              <!-- абсолютний шлях до файлу зображення -->
-              <img
-                class="picture-2"
-                src="https://images.unsplash.com/photo-1420593248178-d88870618ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJhbHxlbnwwfHwwfHw%3D&w=1000&q=80"
-                alt="Послуга гоління небезпечним лезом"
-                width="270"
-                height="445"
-              />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >twitter</a
+              >
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >facebook</a
+              >
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >linkedin</a
+              >
             </li>
           </ul>
         </div>
-
-        <!-- Групування текстового контенту за допомогою div -->
-        <div>
-          <h2>Lorem ipsum dolor sit.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
-            delectus atque debitis necessitatibus quia, numquam possimus? Quo
-            aperiam laboriosam obcaecati error sapiente quaerat saepe at
-            expedita. Atque amet modi sit.
-          </p>
-          <p>
-            Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing
-            elit. Alias placeat beatae molestiae voluptate veritatis vitae aut
-            cupiditate neque quas tempore mollitia asperiores, repellendus optio
-            ipsam, sequi aliquid. Aut, vero repellendus?
-          </p>
-
-          <ol>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-          </ol>
-
-          <ul>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Lorem, ipsum dolor.</li>
+        <li class="member-item">
+          <img
+            class="member-img"
+            src="./images/team/img2.jpg"
+            alt="Michele Doe"
+            width="370"
+            height="346"
+          />
+        </li>
+        <div class="member-group">
+          <h3 class="member-title" lang="en">Michele Doe</h3>
+          <p class="member-position" lang="en">Extreme Barber</p>
+          <ul class="socials">
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >instagram</a
+              >
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >twitter</a
+              >
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >facebook</a
+              >
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >linkedin</a
+              >
+            </li>
           </ul>
-
-          <button type="button">Click me!</button>
         </div>
-      </section>
-    </main>
+        <li class="member-item">
+          <img
+            class="member-img"
+            src="./images/team/img3.jpg"
+            alt="Alan Black"
+            width="370"
+            height="346"
+          />
+        </li>
+        <div class="member-group">
+          <h3 class="member-title" lang="en">Alan Black</h3>
+          <p class="member-position" lang="en">Extreme Barber</p>
+          <ul class="socials">
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >instagram</a
+              >
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >twitter</a
+              >
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >facebook</a
+              >
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href=""
+                target="blank"
+                rel="noopener noreferrer"
+                >linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </section>
 
-    <!-- Футер сайту -->
-    <footer>
-      <!-- Блок місцезнаходження і контактів компанії -->
-      <address>
-        <ul>
-          <li><a href="" target="_blank" rel="noopener noreferrer">We are from Ukraine!)</a></li>
-          <li>
-            <a href="tel:380991112233" target="_blank" rel="noopener noreferrer"
-              >+38(099) 111-22-33</a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:company@mail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >company@mail.com</a
-            >
-          </li>
-        </ul>
-      </address>
+    <footer class="footer">
+      <p class="copyrighr">&#169; Copyright 2020</p>
+
+      <ul class="list">
+        <li class="item">
+          <a
+            class=""
+            href="http://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a
+          >Instagram
+        </li>
+        <li class="item">
+          <a
+            class=""
+            href="http://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a
+          >Youtube
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
